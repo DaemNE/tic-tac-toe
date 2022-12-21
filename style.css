@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+* {
+    font-family: 'Tangerine', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 30px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tangerine', sans-serif;
+    font-size: 48px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(129, 89, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.gameBoard {
+    height: 60vh;
+    width: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+}
+
+.cell {
+    height: 20vh;
+    width: 20vh;
+    background: rgb(129, 89, 52);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    border-radius: 10px;
+}
+
+.scoreBoard {
+    text-decoration: underline;
+    color: white;
+    font-size: 24px;
+}
+
+.block {
+    height: 65%;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-image: url(./images/2078959.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.endGameText {
+    font-size: 5vh;
+    height: 100px;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+button {
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+}
+
+.displayOff {
+    display: flex;
+}

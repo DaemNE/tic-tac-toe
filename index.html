@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="center">
+        <div class="container">
+            <div class="scoreBoard">
+                <div class="turn"></div>
+            </div>
+            <div class="gameBoard">
+                <div class="cell" id="0" onclick="Game.one()"></div>
+                <div class="cell" id="1" onclick="Game.two()"></div>
+                <div class="cell" id="2" onclick="Game.three()"></div>
+                <div class="cell" id="3" onclick="Game.four()"></div>
+                <div class="cell" id="4" onclick="Game.five()"></div>
+                <div class="cell" id="5" onclick="Game.six()"></div>
+                <div class="cell" id="6" onclick="Game.seven()"></div>
+                <div class="cell" id="7" onclick="Game.eigth()"></div>
+                <div class="cell" id="8" onclick="Game.nine()"></div>
+            </div>
+            <div>
+                <button onclick="Game.playGame()">Play Again?</button>
+                <button onclick="Game.resetScore()">Reset Score?</button>
+                <button onclick="Game.submitNames()">Submit names</button>
+                <button onclick="Game.makeComputerMove()">Make Computer move</button>
+                <input type="checkbox" name="toughness" id="toughness">
+                <label for="toughness">Unbeatable bot</label>
+                <ul>
+                    <li>
+                        <input id="playerOne" type="text" placeholder="player one">
+                    </li>
+                    <li>
+                        <input id="playerTwo" type="text" placeholder="player two">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="block" id="overlay">
+        <div class="endGameMesssage">
+            <div class="endGameText">
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
